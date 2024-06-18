@@ -1,0 +1,137 @@
+#divBg{
+    background-color: gray;
+    height:auto;
+    width: 70%;            
+    margin: auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+#divMain{
+    background-color: white;
+    border-radius: 5px;            
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 6px 20px 0 black; 
+    text-align: center;           
+}
+#divTitle{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;            
+}
+#txtTodo{
+    width: 70%;
+    height: 40px;
+    background-color: lightgray;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    background-image: url('memo.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    vertical-align: middle;
+    background-size: 30px 50%;
+    background-position: left;
+    padding-left: 40px;    
+    border: none;  
+    border-radius: 5px;
+    position: relative;
+}         
+#btnSave{
+    width: 45px;
+    height: 45px;
+    background-image: url('save.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-top:2px; 
+    background-size: 100% 100%; 
+    border: none;
+    background-color: lightgray;
+    cursor: pointer;      
+    position: absolute;   
+    right: 30%;    
+}
+.action{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    color: lightgray;             
+    cursor: pointer;
+}
+#divComlpeteAll{
+    background-image: url('checkedAll.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    vertical-align: middle;
+    background-size: 30px 100%;
+    background-position: left;
+    padding-left: 40px;    
+    border: none;        
+    border-radius: 5px;
+}
+#divTodolist{
+    font-size: 20px;
+    padding-bottom: 10%;
+   
+}
+#divTodolist div{
+    margin: auto;
+    width: 70%;
+    text-align: left;
+    padding: 5px;
+    color: gray;
+    padding-left: 40px;
+    cursor: pointer;
+    position: relative;             
+    display: flex;
+    transition:all .5s;
+}        
+#divTodolist div>div{
+    text-align: left;
+    margin: 0;
+    padding: 0; 
+}
+#divTodolist div:hover{      
+    background-color: lightgray;                  
+}
+.checked{
+    background-image: url('checked.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    vertical-align: middle;
+    background-size:20px 25px;
+    background-position: left;             
+}
+.deleteList{
+    width: 26px;
+    background-image: url('cross.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    vertical-align: middle;
+    background-size: 100% 100%;
+    background-position: right;            
+    margin-left: 30%;
+    position: absolute;
+    right: 0;
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 100s, opacity 100s linear;
+}
+#bootomDiv{
+    width: 75%;
+    padding: 10px;
+    margin: auto;
+    border-top: 1px solid lightgray;
+    display: flex;
+    color: lightgray;
+}
+#divfiltertask span{
+    padding-left: 20px;
+    cursor: pointer;
+}
