@@ -1,6 +1,6 @@
  //getting mealid saved in localstorage and displaying.
  var storedNames = JSON.parse(localStorage.getItem("meals"));
-alert(storedNames);
+ 
  for(let j =0  ; j<storedNames.length ; j++){
     getMealDetail(storedNames[j]);            
  }
