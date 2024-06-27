@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;            
+    background-image: linear-gradient(to bottom right, rgb(0, 124, 173), rgb(200, 224, 245));                   
+}
+#divMain{
+    width: 100%;
+    height: 100%; 
+    min-height: 100vh;
+    background-image:  url('food.png');
+    background-size: 100% 1000px;
+    background-repeat:repeat-y;
+     
+}
+ul li{
+    list-style: none;
+    float: left;
+    padding-left: 1rem;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+ul li a:hover{
+    color: orangered;
+   text-decoration: none;
+   
+}
+#divTop{ 
+    text-align: center;
+    padding-top: 10%;
+}
+ #txtSearch{
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 30%;
+    padding: 5px;
+    position: relative;
+    border: none;
+}
+#btnSearch{                
+    height: 40px;
+    width: 40px;
+    position: absolute;  
+    background-image: url('searchicon.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-top:2px; 
+    background-size: 100% 100%; 
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    right: 36%;
+}
+#divList{
+    width: 80%;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    box-sizing:border-box;
+    margin: auto;                
+}
+#divList>div{                
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px black;                
+    margin-top: 5%;
+}
+.favorite{
+    background-image: url(heart.png);
+    background-size: 100% 100%;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: none;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+}
+.favoriteAdded{
+    background-image: url(heartAdded.gif);
+    background-size: 100% 100%;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: none;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+}
+/* stles for mealdetail page */
+#divDetailbg{
+    width: 80%;
+     background-color: lightgray;
+     box-shadow: 0px 5px 10px 0px black;
+     margin: auto;
+     border-radius: 5px; 
+     padding-top: 5%;
+}
+#imgFood{
+    max-width: 40%;
+    max-height: 40%;
+}

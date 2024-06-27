@@ -1,31 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="divBg">
-        <div id="divTitle">My TODO List</div>
-        <div id="divMain">
-            <div style="padding-top: 10px;">
-                <input id="txtTodo" type="text" placeholder="Write list here..">
-                <input type="button" id="btnSave">
+    <head>
+        <title>Meal Search App</title>        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">     
+    </head>
+    <body>
+        <div id="divMain" class="position-relative">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="meallist.html">My Favorite</a></li>
+                </ul>
+            </nav> 
+            <div id="divTop">                                       
+                <input id="txtSearch" type="text" list="datalist" placeholder="Search here..." onkeyup="autoSearch(this.value)">
+                <datalist id="datalist">                     
+                </datalist>            
+                <input type="button" id="btnSearch" >
             </div>
-            <div class="action">
-                <div id="divComlpeteAll" style="width: 60%;text-align: left;">Complete all tasks</div>
-                <div id="clearCompleted" style="width: 50%;text-align: right;">Clear completed</div>
-            </div>
-            <div id="divTodolist">
-                <div class="listitem unchecked"> <div> Wake up at 6am</div> <span class="deleteList"> &nbsp;</span></div>                                
-            </div>
-            <div id="bootomDiv">
-                <div style="width: 60%;text-align: left;"><span  id="divtaskcount"></span> task left</div>
-                <div id="divfiltertask" style="width: 50%;text-align: right;">
-                    <span id="all">All</span><span id="uncomplete">Uncomplete</span><span id="completed">Completed</span>
-                </div>
-            </div>
-        </div>
-    </div>
+            <div id="divList"> </div>
+        </div> 
+    </body>
     <script src="script.js"></script>
-</body>
+     
 </html>
