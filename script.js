@@ -47,7 +47,7 @@
             });
         });
         function addToFav(ele,mid){  
-            alert(mid);           
+                      
             if(ele.classList.contains("favorite")){
                 ele.classList.add("favoriteAdded");
                 ele.classList.remove("favorite");
