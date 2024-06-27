@@ -17,7 +17,7 @@
                     <img src="${mealData.meals[i].strMealThumb}" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">${(mealData.meals[i].strMeal.length>20?mealData.meals[i].strMeal.substring(0,20)+"...":mealData.meals[i].strMeal.substring(0,25))} </h5>  
-                    <a href="mealdetail.html?id=${mealData.meals[i].idMeal}" class="btn btn-primary">More info...</a><input id="${mealData.meals[i].idMeal}" type="button" class="favorite" onclick="addToFav(this);"/>                                    
+                    <a href="mealdetail.html?id=${mealData.meals[i].idMeal}" class="btn btn-primary">More info...</a><input id="${mealData.meals[i].idMeal}" type="button" class="favorite" onclick="addToFav(this, ${mealData.meals[i].idMeal});"/>                                    
                     </div>
                 </div>`;                 
                 divList.append(newDiv);
@@ -46,11 +46,12 @@
                 }
             });
         });
-        function addToFav(ele){             
+        function addToFav(ele,mid){  
+            alert(mid);           
             if(ele.classList.contains("favorite")){
                 ele.classList.add("favoriteAdded");
                 ele.classList.remove("favorite");
-                storedNames.push(ele.getAttribute("id"));
+                storedNames.push(mid);
             }else{
                 ele.classList.add("favorite");
                 ele.classList.remove("favoriteAdded"); 
